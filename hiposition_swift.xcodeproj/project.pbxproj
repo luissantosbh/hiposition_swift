@@ -10,20 +10,38 @@
 		911F61C1212B6403009EB551 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911F61C0212B6403009EB551 /* AppDelegate.swift */; };
 		911F61C3212B6403009EB551 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911F61C2212B6403009EB551 /* ViewController.swift */; };
 		911F61C6212B6403009EB551 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911F61C4212B6403009EB551 /* Main.storyboard */; };
-		911F61C9212B6403009EB551 /* hiposition_swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 911F61C7212B6403009EB551 /* hiposition_swift.xcdatamodeld */; };
 		911F61CB212B6405009EB551 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 911F61CA212B6405009EB551 /* Assets.xcassets */; };
 		911F61CE212B6405009EB551 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911F61CC212B6405009EB551 /* LaunchScreen.storyboard */; };
+		911F61D8212B6999009EB551 /* CampanhaCelula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911F61D7212B6999009EB551 /* CampanhaCelula.swift */; };
+		911F61DC212B6B32009EB551 /* hipositionDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 911F61DA212B6B32009EB551 /* hipositionDataModel.xcdatamodeld */; };
+		911F61DF212B6BD1009EB551 /* CampanhaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911F61DE212B6BD1009EB551 /* CampanhaTableViewController.swift */; };
+		911F61E3212C30F8009EB551 /* FindBeacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911F61E2212C30F8009EB551 /* FindBeacon.swift */; };
+		911F61E6212C595D009EB551 /* HipositionApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911F61E5212C595D009EB551 /* HipositionApi.swift */; };
+		914F9142212DA5C000810C27 /* ResponseCollectionSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914F9141212DA5C000810C27 /* ResponseCollectionSerializable.swift */; };
+		914F9144212DB58400810C27 /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914F9143212DB58400810C27 /* BeaconManager.swift */; };
+		91ED4BD121304CC3007A9D52 /* SerializableJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ED4BD021304CC3007A9D52 /* SerializableJson.swift */; };
+		9874EB324ABE92E3CC816F21 /* Pods_hiposition_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9852319C62A7E9C61BAA912 /* Pods_hiposition_swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01A5EF23E253664CCEA82BA7 /* Pods-hiposition_swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hiposition_swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-hiposition_swift/Pods-hiposition_swift.release.xcconfig"; sourceTree = "<group>"; };
 		911F61BD212B6403009EB551 /* hiposition_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hiposition_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		911F61C0212B6403009EB551 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		911F61C2212B6403009EB551 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		911F61C5212B6403009EB551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		911F61C8212B6403009EB551 /* hiposition_swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hiposition_swift.xcdatamodel; sourceTree = "<group>"; };
 		911F61CA212B6405009EB551 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		911F61CD212B6405009EB551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		911F61CF212B6405009EB551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		911F61D7212B6999009EB551 /* CampanhaCelula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampanhaCelula.swift; sourceTree = "<group>"; };
+		911F61DB212B6B32009EB551 /* hipositionDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hipositionDataModel.xcdatamodel; sourceTree = "<group>"; };
+		911F61DE212B6BD1009EB551 /* CampanhaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampanhaTableViewController.swift; sourceTree = "<group>"; };
+		911F61E2212C30F8009EB551 /* FindBeacon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindBeacon.swift; sourceTree = "<group>"; };
+		911F61E5212C595D009EB551 /* HipositionApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HipositionApi.swift; sourceTree = "<group>"; };
+		914F9141212DA5C000810C27 /* ResponseCollectionSerializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCollectionSerializable.swift; sourceTree = "<group>"; };
+		914F9143212DB58400810C27 /* BeaconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
+		91ED4BD021304CC3007A9D52 /* SerializableJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializableJson.swift; sourceTree = "<group>"; };
+		A9852319C62A7E9C61BAA912 /* Pods_hiposition_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hiposition_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF2553809C04EF5B3702903D /* Pods-hiposition_swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hiposition_swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hiposition_swift/Pods-hiposition_swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +49,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9874EB324ABE92E3CC816F21 /* Pods_hiposition_swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E82CA151A6386787138D2B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9852319C62A7E9C61BAA912 /* Pods_hiposition_swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C223084467ED456E0DDDBBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF2553809C04EF5B3702903D /* Pods-hiposition_swift.debug.xcconfig */,
+				01A5EF23E253664CCEA82BA7 /* Pods-hiposition_swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		911F61B4212B6403009EB551 = {
 			isa = PBXGroup;
 			children = (
+				914F9140212DA59700810C27 /* Util */,
+				911F61E4212C590F009EB551 /* Services */,
+				911F61DD212B6BAB009EB551 /* ViewControllers */,
+				911F61D9212B6ADC009EB551 /* Model */,
 				911F61BF212B6403009EB551 /* hiposition_swift */,
 				911F61BE212B6403009EB551 /* Products */,
+				4C223084467ED456E0DDDBBD /* Pods */,
+				1E82CA151A6386787138D2B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +99,49 @@
 			isa = PBXGroup;
 			children = (
 				911F61C0212B6403009EB551 /* AppDelegate.swift */,
-				911F61C2212B6403009EB551 /* ViewController.swift */,
 				911F61C4212B6403009EB551 /* Main.storyboard */,
+				911F61D7212B6999009EB551 /* CampanhaCelula.swift */,
 				911F61CA212B6405009EB551 /* Assets.xcassets */,
 				911F61CC212B6405009EB551 /* LaunchScreen.storyboard */,
 				911F61CF212B6405009EB551 /* Info.plist */,
-				911F61C7212B6403009EB551 /* hiposition_swift.xcdatamodeld */,
 			);
 			path = hiposition_swift;
+			sourceTree = "<group>";
+		};
+		911F61D9212B6ADC009EB551 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				911F61DA212B6B32009EB551 /* hipositionDataModel.xcdatamodeld */,
+				914F9143212DB58400810C27 /* BeaconManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		911F61DD212B6BAB009EB551 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				911F61C2212B6403009EB551 /* ViewController.swift */,
+				911F61DE212B6BD1009EB551 /* CampanhaTableViewController.swift */,
+				911F61E2212C30F8009EB551 /* FindBeacon.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		911F61E4212C590F009EB551 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				911F61E5212C595D009EB551 /* HipositionApi.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		914F9140212DA59700810C27 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				914F9141212DA5C000810C27 /* ResponseCollectionSerializable.swift */,
+				91ED4BD021304CC3007A9D52 /* SerializableJson.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 911F61D2212B6405009EB551 /* Build configuration list for PBXNativeTarget "hiposition_swift" */;
 			buildPhases = (
+				6D7E856EB80F4AAB00047C9B /* [CP] Check Pods Manifest.lock */,
 				911F61B9212B6403009EB551 /* Sources */,
 				911F61BA212B6403009EB551 /* Frameworks */,
 				911F61BB212B6403009EB551 /* Resources */,
+				47DBA685C78B1B1559166688 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +212,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		47DBA685C78B1B1559166688 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-hiposition_swift/Pods-hiposition_swift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-SwiftyJSON/Alamofire_SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hiposition_swift/Pods-hiposition_swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D7E856EB80F4AAB00047C9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hiposition_swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		911F61B9212B6403009EB551 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914F9142212DA5C000810C27 /* ResponseCollectionSerializable.swift in Sources */,
+				911F61DF212B6BD1009EB551 /* CampanhaTableViewController.swift in Sources */,
+				914F9144212DB58400810C27 /* BeaconManager.swift in Sources */,
 				911F61C3212B6403009EB551 /* ViewController.swift in Sources */,
-				911F61C9212B6403009EB551 /* hiposition_swift.xcdatamodeld in Sources */,
+				911F61DC212B6B32009EB551 /* hipositionDataModel.xcdatamodeld in Sources */,
+				911F61D8212B6999009EB551 /* CampanhaCelula.swift in Sources */,
+				91ED4BD121304CC3007A9D52 /* SerializableJson.swift in Sources */,
 				911F61C1212B6403009EB551 /* AppDelegate.swift in Sources */,
+				911F61E6212C595D009EB551 /* HipositionApi.swift in Sources */,
+				911F61E3212C30F8009EB551 /* FindBeacon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,10 +411,11 @@
 		};
 		911F61D3212B6405009EB551 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF2553809C04EF5B3702903D /* Pods-hiposition_swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JRK98V44C4;
+				DEVELOPMENT_TEAM = 27TZFPM78K;
 				INFOPLIST_FILE = hiposition_swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,10 +430,11 @@
 		};
 		911F61D4212B6405009EB551 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01A5EF23E253664CCEA82BA7 /* Pods-hiposition_swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JRK98V44C4;
+				DEVELOPMENT_TEAM = 27TZFPM78K;
 				INFOPLIST_FILE = hiposition_swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -340,13 +471,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		911F61C7212B6403009EB551 /* hiposition_swift.xcdatamodeld */ = {
+		911F61DA212B6B32009EB551 /* hipositionDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				911F61C8212B6403009EB551 /* hiposition_swift.xcdatamodel */,
+				911F61DB212B6B32009EB551 /* hipositionDataModel.xcdatamodel */,
 			);
-			currentVersion = 911F61C8212B6403009EB551 /* hiposition_swift.xcdatamodel */;
-			path = hiposition_swift.xcdatamodeld;
+			currentVersion = 911F61DB212B6B32009EB551 /* hipositionDataModel.xcdatamodel */;
+			path = hipositionDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

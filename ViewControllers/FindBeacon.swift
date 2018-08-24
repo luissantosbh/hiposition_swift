@@ -12,37 +12,63 @@ import CoreLocation
 class FindBeacon: UIViewController, CLLocationManagerDelegate {
     
     
+    var beaconDefault = Beacon()
     //1) Inserir os dados do beacon
     
+    /*
+        { (parameters) -> returnType in
+            statements to execute
+    }
+     
+     
+     
+     exemplo 2
+     
+     let f = { (x: int) -> Int
+     in
+     return x + 42}
+     
+     
+     f(9)
+     f(50)
+    */
+    
+    
+    
+    @objc func loadDefaultBeacon()
+    {
+      
+        let existeBeacon =
+            (BeaconManager.shared.loadBeacon(with: self.context).uuid != nil);
+        
+            if(!existeBeacon)
+            {
+                HipositionApi.loadDefaultBeacon{(b: BeaconJson?) -> Void
+                    in
+                
+                BeaconManager.shared.saveBeacon(_beacon: b!, with: self.context)
+            }
+        }
+    }
+    
+    
     let locationManager = CLLocationManager()
+    let region = CLBeaconRegion(proximityUUID: UUID(uuidString: "E2C56DB5-DFFB-48D2-B060-D0F5A71096E0")!, identifier: "AirLocate")
     
-    // let region = CLBeaconRegion(proximityUUID: UUID(uuidString: "E2C56DB5-DFFB-48D2-B060-D0F5A71096E0")!, identifier: "AirLocate")
-    
-    let region = CLBeaconRegion(proximityUUID: UUID(uuidString: "699EBC80-E1F3-11E3-9A0F-0CF3EE3BC012")!, identifier: "HiPosition") //major:90, minor:13133,
- 
     override func viewDidLoad(){
         super.viewDidLoad()
-        
-    
-    
-    // 2) Definir autorizações no "info.plist"
-    // 3) Começar procurar os beacons na região
+ 
     
     locationManager.delegate = self
     if (CLLocationManager.authorizationStatus() != CLAuthorizationStatus.authorizedWhenInUse) {
     locationManager.requestWhenInUseAuthorization()
     }
     locationManager.startRangingBeacons(in: region)
-    
-    
 }
 
-// 4) Mostrar os beacons
-func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
-    print(beacons)
-}
+    // 4) Mostrar os beacons
+    func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
+        print(beacons)
+    }
     
-    
-    
-
 }

@@ -20,8 +20,8 @@ class User{
     var connections: Int
     var status: Int
     
-    
-    
+   
+    /*
     init(id: Int, uuid: String, name: String, eMail: String, password: String, phone: String, connections: Int, status: Int) {
         self.id = id
         self.uuid = uuid
@@ -31,6 +31,6 @@ class User{
         self.phone = phone
         self.connections = connections
         self.status = status
-    }
+    } */
     
 }

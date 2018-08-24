@@ -6,7 +6,6 @@
 //  Copyright © 2018 Luís Antônio de Oliveira Santos. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 
