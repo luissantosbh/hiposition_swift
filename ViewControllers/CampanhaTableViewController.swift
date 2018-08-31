@@ -11,23 +11,18 @@ import CoreData
 
 class CampanhaTableViewController: UITableViewController {
     
+   // var campanhas =
     var campaignOb: NSManagedObject!
     var addCampanhas: [Campaign] = [] // variável que irá incrementar novos campanhas
     var gerenciadorObjetos: NSManagedObjectContext!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         //inicializa gerenciador de objetos
         let appDelagate = UIApplication.shared.delegate as! AppDelegate
         gerenciadorObjetos = appDelagate.persistentContainer.viewContext
-       
-        
         saveCampaign()
         loadItems()
-        
-        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -115,25 +110,15 @@ class CampanhaTableViewController: UITableViewController {
     
     func saveCampaign(){
         
-        //cria objeto para campanha
-        
-        
-        
         let newCampaign = NSEntityDescription.insertNewObject(forEntityName: "Campaign", into: gerenciadorObjetos )
-        
         //configura campanha
-        newCampaign.setValue( "Campanha1" , forKey: "name")
-        
-        
+        newCampaign.setValue( "CampanhaMichael" , forKey: "name")
         do{
             try gerenciadorObjetos.save()
         }catch let erro as NSError {
             print("Erro ao adicionar campanha: erro \(erro.description) ")
         }
-        
     }
-        
-
 }
 
     

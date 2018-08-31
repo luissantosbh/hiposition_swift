@@ -97,6 +97,7 @@
                                 </state>
                                 <connections>
                                     <action selector="prepareUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ffd-hD-3bi"/>
+                                    <segue destination="8AU-TA-8am" kind="show" id="SKZ-Yc-s4d"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -228,25 +229,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celulaReuso" textLabel="kq7-vG-Lba" style="IBUITableViewCellStyleDefault" id="0lD-Mi-Fcm" customClass="CampanhaCelula" customModule="hiposition_swift" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="12" reuseIdentifier="celulaReuso" rowHeight="300" id="0lD-Mi-Fcm" customClass="CampanhaCelula" customModule="hiposition_swift" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="300"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0lD-Mi-Fcm" id="Bj4-E2-85Q" customClass="CampanhaCelula" customModule="hiposition_swift" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="299.66666666666669"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kq7-vG-Lba">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="43.666666666666664"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dgo-QD-9yg" userLabel="imgCampanha">
+                                            <rect key="frame" x="87" y="0.0" width="240" height="128"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WeW-Uk-MIm" userLabel="tvDescricao">
+                                            <rect key="frame" x="20" y="171" width="374" height="128"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lblTituloCampanha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhE-ff-6yF">
+                                            <rect key="frame" x="135" y="139" width="144" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="nome" destination="kq7-vG-Lba" id="PPE-7X-uTg"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -257,7 +267,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8q1-Zv-nW8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="94" y="-1336"/>
+            <point key="canvasLocation" x="134.78260869565219" y="-1193.4782608695652"/>
         </scene>
         <!--View Controller Home-->
         <scene sceneID="wlK-dj-YJb">
@@ -350,4 +360,7 @@
     <resources>
         <image name="Icon-App-83.5x83.5" width="83" height="83"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="SKZ-Yc-s4d"/>
+    </inferredMetricsTieBreakers>
 </document>

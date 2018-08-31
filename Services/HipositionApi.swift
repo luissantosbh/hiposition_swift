@@ -29,44 +29,59 @@ class  HipositionApi{
                     print(error)
                     onCompletion(nil)
                 }
+            }
+        }
+    }
+    
+    public class func postUser(user: UserJson, onCompletion: @escaping(UserJson?) -> Void)
+    {
+        let newUser: [String: Any] =
+            ["name": user.name ,
+             "email": user.email ,
+             "password": user.password,
+             "phone": user.phone ,
+             "connections": user.connections,
+             "status": user.status
+        ]
+        let url = HipositionApi.baseURL + "User"
+        Alamofire.request(url, method: .post, parameters: newUser, encoding: JSONEncoding.default)
+            .responseJSON { (dataResponse) in
+                if let data = dataResponse.data {
+                    do {
+                        let response = try JSONDecoder().decode(UserJson.self, from: data)
+                        onCompletion(response)
+                    } catch {
+                        print(error)
+                        onCompletion(nil)
+                    }
                 return
             }
         }
     }
     
-    public class func createUserEventData(user: User, onCompletion: @escaping(UserJson?) -> Void){
-        let newUser: [String: Any] =
-            ["name": user.name,
-             "email": user.eMail,
-             "password": user.password,
-             "phone": user.phone,
-             "connections": user.connections,
-             "status": user.status
-            ]
-        let url = HipositionApi.baseURL + "User"
-        Alamofire.request(url, method: .post, parameters: newUser,
-                          encoding: JSONEncoding.default)
-        .responseJSON { (dataResponse) in
+    public class func loadCampaignByUUID(beaconUUID: String, onCompletion: @escaping([CampaignJson]?) -> Void) {
+        let url = HipositionApi.baseURL + "Campaign/"+beaconUUID+"/beacon";
+        Alamofire.request(url).responseJSON { (dataResponse) in
             if let data = dataResponse.data {
                 do {
-                    let response = try JSONDecoder().decode(UserJson.self, from: data)
+                    let response = try JSONDecoder().decode([CampaignJson].self, from: data)
                     onCompletion(response)
                 } catch {
                     print(error)
                     onCompletion(nil)
                 }
-                return
             }
         }
     }
+    
+    
+    
+    
+    
+    
 }
 
-
-
-
-
 struct BeaconJson : Codable {
-    
     let campainID : Int64
     let clientID : Int64
     let major : String
@@ -77,7 +92,6 @@ struct BeaconJson : Codable {
     let id : Int64
     let uuid : String
     let registerDate : String
-    
 }
 
 struct UserJson: Codable{
@@ -90,12 +104,41 @@ struct UserJson: Codable{
     let picture : String
     let token : String
     let phone : String
-    let connections : String
-    let status : Int
+    let connections : Int64
+    let status : Int64
     let id : Int64
     let uuid : String
     let registerDate : String
 }
+
+struct CampaignJson {
+    let name : String
+    let title : String
+    let url : String
+    let littleDescription : String
+    let description : String
+    let ChatBot : ChatBotJson
+    let pictures : [PictureJson]
+    let actions : [ActionsJson]
+}
+
+struct ChatBotJson {
+    let id : Int64
+    let uuid : String
+}
+
+struct PictureJson {
+    let name : String
+    let location : String
+    let url : String
+}
+
+struct ActionsJson {
+    let type : String
+    let name : String
+    let link : String
+}
+
 
 
 

@@ -20,6 +20,8 @@
 		914F9142212DA5C000810C27 /* ResponseCollectionSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914F9141212DA5C000810C27 /* ResponseCollectionSerializable.swift */; };
 		914F9144212DB58400810C27 /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914F9143212DB58400810C27 /* BeaconManager.swift */; };
 		91ED4BD121304CC3007A9D52 /* SerializableJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ED4BD021304CC3007A9D52 /* SerializableJson.swift */; };
+		91F7CE1B2138BDE6000508EE /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F7CE1A2138BDE6000508EE /* UserManager.swift */; };
+		91F7CE1D2138E190000508EE /* CampaignManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F7CE1C2138E190000508EE /* CampaignManager.swift */; };
 		9874EB324ABE92E3CC816F21 /* Pods_hiposition_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9852319C62A7E9C61BAA912 /* Pods_hiposition_swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,8 @@
 		914F9141212DA5C000810C27 /* ResponseCollectionSerializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCollectionSerializable.swift; sourceTree = "<group>"; };
 		914F9143212DB58400810C27 /* BeaconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
 		91ED4BD021304CC3007A9D52 /* SerializableJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializableJson.swift; sourceTree = "<group>"; };
+		91F7CE1A2138BDE6000508EE /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		91F7CE1C2138E190000508EE /* CampaignManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignManager.swift; sourceTree = "<group>"; };
 		A9852319C62A7E9C61BAA912 /* Pods_hiposition_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hiposition_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2553809C04EF5B3702903D /* Pods-hiposition_swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hiposition_swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hiposition_swift/Pods-hiposition_swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +117,8 @@
 			children = (
 				911F61DA212B6B32009EB551 /* hipositionDataModel.xcdatamodeld */,
 				914F9143212DB58400810C27 /* BeaconManager.swift */,
+				91F7CE1A2138BDE6000508EE /* UserManager.swift */,
+				91F7CE1C2138E190000508EE /* CampaignManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -263,12 +269,14 @@
 				914F9142212DA5C000810C27 /* ResponseCollectionSerializable.swift in Sources */,
 				911F61DF212B6BD1009EB551 /* CampanhaTableViewController.swift in Sources */,
 				914F9144212DB58400810C27 /* BeaconManager.swift in Sources */,
+				91F7CE1D2138E190000508EE /* CampaignManager.swift in Sources */,
 				911F61C3212B6403009EB551 /* ViewController.swift in Sources */,
 				911F61DC212B6B32009EB551 /* hipositionDataModel.xcdatamodeld in Sources */,
 				911F61D8212B6999009EB551 /* CampanhaCelula.swift in Sources */,
 				91ED4BD121304CC3007A9D52 /* SerializableJson.swift in Sources */,
 				911F61C1212B6403009EB551 /* AppDelegate.swift in Sources */,
 				911F61E6212C595D009EB551 /* HipositionApi.swift in Sources */,
+				91F7CE1B2138BDE6000508EE /* UserManager.swift in Sources */,
 				911F61E3212C30F8009EB551 /* FindBeacon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
